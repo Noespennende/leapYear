@@ -20,5 +20,5 @@ jobs:
         with:
           java-version: 19
       - name: "test with Maven"
-        run: mvn -B test --file pom.xml
+        run: mvn -B test -test_leap_year pom.xml
 
