@@ -9,20 +9,16 @@ on:
 
 
 jobs:
-  tests:
+  run_tests:
     name: "Run tests"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout and setup
-        uses: actions/checkout@v4
-      - name: setup Java
-        uses: actions/setup-java@v3
+      - name: "Checkout and setup"
+        uses: actions/checkout@v2
+      - name: "setup Java"
+        uses: actions/setup-java@v1
         with:
-          java-version: '19'
-          distribution: 'temurin'
-      - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots verify
-      - name: Run tests
-        run: mvn -B tests --file pom.xml
-
+          java-version: 19
+      - name: "test with Maven"
+        run: mvn -B test --file pom.xml
 
