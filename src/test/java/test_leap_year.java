@@ -55,7 +55,8 @@ public class test_leap_year {
                 Arguments.of(2027),
                 Arguments.of(2029),
                 Arguments.of(2031),
-                Arguments.of(2033)
+                Arguments.of(2033),
+                Arguments.of(2016)
         );
     }
 
