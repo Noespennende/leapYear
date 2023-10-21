@@ -10,7 +10,7 @@ public class test_leap_year {
     @MethodSource({"leap_years_divisible_by_4_but_not_100"})
 
     public void return_true_if_leap_year_divisible_by_4_but_not_100(int input){
-        assertTrue(year.isLeapYear(input));
+        assertTrue(leap_year.isLeapYear(input));
     }
 
     public static Stream leap_years_divisible_by_4_but_not_100(){
@@ -26,7 +26,7 @@ public class test_leap_year {
     @MethodSource({"leap_years_divisible_by_400"})
 
     public void return_true_if_leap_year_divisible_by_400(int input){
-        assertTrue(year.isLeapYear(input));
+        assertTrue(leap_year.isLeapYear(input));
     }
 
     public static Stream leap_years_divisible_by_400(){
@@ -43,7 +43,7 @@ public class test_leap_year {
     @MethodSource("not_leap_years_not_divisible_by_4")
 
     public void return_false_if_not_leap_year_is_not_divisible_by_4(int input){
-        assertFalse(year.isLeapYear(input));
+        assertFalse(leap_year.isLeapYear(input));
     }
 
     public static Stream not_leap_years_not_divisible_by_4() {
@@ -63,7 +63,7 @@ public class test_leap_year {
         @MethodSource("not_leap_years_divisible_by_100_but_not_400")
 
         public void return_false_if_not_leap_year_is_divisible_by_100_but_not_400(int input){
-            assertFalse(year.isLeapYear(input));
+            assertFalse(leap_year.isLeapYear(input));
         }
 
         public static Stream not_leap_years_divisible_by_100_but_not_400(){
