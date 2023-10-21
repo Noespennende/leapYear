@@ -4,7 +4,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class test_leap_year {
+public class leap_year_test {
 
     @ParameterizedTest
     @MethodSource({"leap_years_divisible_by_4_but_not_100"})
