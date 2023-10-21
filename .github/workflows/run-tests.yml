@@ -28,9 +28,6 @@ jobs:
       - name: 'Build with Maven'
         run: mvn --batch-mode --update-snapshots verify
 
-      - name: "run tests"
-        run: action-junit-report@v4
-
 
 
 
